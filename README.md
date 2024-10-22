@@ -98,6 +98,11 @@ The overall goal is to allow autonomous vehicles (AVs) to perform real-time risk
 
 The system supports various OpenSCENARIO (.xosc) files that can simulate different autonomous driving situations. Ensure your scenario files are placed in the appropriate directory for them to be accessible.
 
+# Risk Plots
+
+![Sample risk plot for vehicle in front and on left](relative%20assets/sample.png?raw=true "Sample Risk Plot")
+
+
 # Risk Assessment Output
 
 The system generates risk predictions in real-time, displayed on a dynamic risk plot. The X-axis represents time (in seconds), while the Y-axis represents the collision probability (ranging from 0 to 1). The output also includes different risk components, such as forward vehicle braking, side vehicle cut-in risks, and environmental uncertainty.
