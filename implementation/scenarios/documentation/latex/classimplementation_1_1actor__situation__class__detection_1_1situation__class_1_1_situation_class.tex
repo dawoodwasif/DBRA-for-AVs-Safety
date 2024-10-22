@@ -1,0 +1,140 @@
+\hypertarget{classimplementation_1_1actor__situation__class__detection_1_1situation__class_1_1_situation_class}{}\section{implementation.\+actor\+\_\+situation\+\_\+class\+\_\+detection.\+situation\+\_\+class.\+Situation\+Class Class Reference}
+\label{classimplementation_1_1actor__situation__class__detection_1_1situation__class_1_1_situation_class}\index{implementation.\+actor\+\_\+situation\+\_\+class\+\_\+detection.\+situation\+\_\+class.\+Situation\+Class@{implementation.\+actor\+\_\+situation\+\_\+class\+\_\+detection.\+situation\+\_\+class.\+Situation\+Class}}
+Inheritance diagram for implementation.\+actor\+\_\+situation\+\_\+class\+\_\+detection.\+situation\+\_\+class.\+Situation\+Class\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.510791cm]{classimplementation_1_1actor__situation__class__detection_1_1situation__class_1_1_situation_class}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classimplementation_1_1actor__situation__class__detection_1_1situation__class_1_1_situation_class_abf95e1ac7cb510f64a748821db95aff8}{\+\_\+\+\_\+init\+\_\+\+\_\+}
+\item 
+def \hyperlink{classimplementation_1_1actor__situation__class__detection_1_1situation__class_1_1_situation_class_abe7a6160a04aec28f7d4ad4ede854142}{update\+\_\+actor\+\_\+association}
+\item 
+def \hyperlink{classimplementation_1_1actor__situation__class__detection_1_1situation__class_1_1_situation_class_a78453f97c4d88f23beffccd6d6737e77}{clear\+\_\+actor\+\_\+associations} (self)
+\item 
+def \hyperlink{classimplementation_1_1actor__situation__class__detection_1_1situation__class_1_1_situation_class_a5cb0c30076bcc15f8fede647f246bf9b}{print\+\_\+information}
+\item 
+def \hyperlink{classimplementation_1_1actor__situation__class__detection_1_1situation__class_1_1_situation_class_a2d1b817a4d39a19f1c0155eb2323b739}{set\+\_\+possible\+\_\+next\+\_\+situation\+\_\+classes\+\_\+by\+\_\+road\+\_\+segment\+\_\+end}
+\item 
+def \hyperlink{classimplementation_1_1actor__situation__class__detection_1_1situation__class_1_1_situation_class_ac1e44fe3336feab956b59c4d50ed6292}{set\+\_\+previous\+\_\+situation\+\_\+classes\+\_\+by\+\_\+road\+\_\+segment\+\_\+end}
+\item 
+def \hyperlink{classimplementation_1_1actor__situation__class__detection_1_1situation__class_1_1_situation_class_adb026e9ec4686a17e24b9e496703907e}{contains\+\_\+location}
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classimplementation_1_1actor__situation__class__detection_1_1situation__class_1_1_situation_class_a2782b467e701c72c8a445cfe7284f585}{situation\+\_\+type}
+\item 
+\hyperlink{classimplementation_1_1actor__situation__class__detection_1_1situation__class_1_1_situation_class_a27d4d3259b8bb96107692e2b936ce801}{id}
+\item 
+\hyperlink{classimplementation_1_1actor__situation__class__detection_1_1situation__class_1_1_situation_class_a932a0f38eb6274f6d5f9812175f0365e}{possible\+\_\+next\+\_\+situation\+\_\+classes\+\_\+by\+\_\+road\+\_\+segment\+\_\+end}
+\item 
+\hyperlink{classimplementation_1_1actor__situation__class__detection_1_1situation__class_1_1_situation_class_add0a7a31f57b145a0c5af43ee596cb93}{previous\+\_\+situation\+\_\+classes\+\_\+by\+\_\+road\+\_\+segment\+\_\+end}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Super class of all specified situation classes. A situation class instance is defined for a certain area in a
+town and knows which vehicles are currently in this area. A situation class can also be aware of which neighbor
+situation classes are specified as next and previous situation classes for each road segment end of this
+situation class
+
+Attributes
+----------
+situation_type: SituationClassType
+    Specifies the type of this situation class.
+id: str
+    Identifier of the situation class
+actors_in_situation_class: List[Union["EgoVehicle", "OtherVehicle"]
+    A list of all vehicles that are currently in the situation class
+possible_next_situation_classes_by_road_segment_end: Dict[RoadSegmentEnd, SituationClass]
+    Dictionary of possible next situation classes categorized by a road segment end object as the dictionary key
+previous_situation_classes_by_road_segment_end: Dict["RoadSegmentEnd", "SituationClass"]
+    Dictionary of previous situation classes categorized by a road segment end object as the dictionary key
+\end{DoxyVerb}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classimplementation_1_1actor__situation__class__detection_1_1situation__class_1_1_situation_class_abf95e1ac7cb510f64a748821db95aff8}\label{classimplementation_1_1actor__situation__class__detection_1_1situation__class_1_1_situation_class_abf95e1ac7cb510f64a748821db95aff8}} 
+\index{implementation\+::actor\+\_\+situation\+\_\+class\+\_\+detection\+::situation\+\_\+class\+::\+Situation\+Class@{implementation\+::actor\+\_\+situation\+\_\+class\+\_\+detection\+::situation\+\_\+class\+::\+Situation\+Class}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!implementation\+::actor\+\_\+situation\+\_\+class\+\_\+detection\+::situation\+\_\+class\+::\+Situation\+Class@{implementation\+::actor\+\_\+situation\+\_\+class\+\_\+detection\+::situation\+\_\+class\+::\+Situation\+Class}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def implementation.\+actor\+\_\+situation\+\_\+class\+\_\+detection.\+situation\+\_\+class.\+Situation\+Class.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{id }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classimplementation_1_1actor__situation__class__detection_1_1situation__class_1_1_situation_class_a78453f97c4d88f23beffccd6d6737e77}\label{classimplementation_1_1actor__situation__class__detection_1_1situation__class_1_1_situation_class_a78453f97c4d88f23beffccd6d6737e77}} 
+\index{implementation\+::actor\+\_\+situation\+\_\+class\+\_\+detection\+::situation\+\_\+class\+::\+Situation\+Class@{implementation\+::actor\+\_\+situation\+\_\+class\+\_\+detection\+::situation\+\_\+class\+::\+Situation\+Class}!clear\+\_\+actor\+\_\+associations@{clear\+\_\+actor\+\_\+associations}}
+\index{clear\+\_\+actor\+\_\+associations@{clear\+\_\+actor\+\_\+associations}!implementation\+::actor\+\_\+situation\+\_\+class\+\_\+detection\+::situation\+\_\+class\+::\+Situation\+Class@{implementation\+::actor\+\_\+situation\+\_\+class\+\_\+detection\+::situation\+\_\+class\+::\+Situation\+Class}}
+\subsubsection{\texorpdfstring{clear\+\_\+actor\+\_\+associations()}{clear\_actor\_associations()}}
+{\footnotesize\ttfamily def implementation.\+actor\+\_\+situation\+\_\+class\+\_\+detection.\+situation\+\_\+class.\+Situation\+Class.\+clear\+\_\+actor\+\_\+associations (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Removes all associations to vehicle actors. This method is abstract and has to be implemented in the
+specific situation class class definition, as each situation class could handle the vehicle association
+differently.\end{DoxyVerb}
+ \mbox{\Hypertarget{classimplementation_1_1actor__situation__class__detection_1_1situation__class_1_1_situation_class_adb026e9ec4686a17e24b9e496703907e}\label{classimplementation_1_1actor__situation__class__detection_1_1situation__class_1_1_situation_class_adb026e9ec4686a17e24b9e496703907e}} 
+\index{implementation\+::actor\+\_\+situation\+\_\+class\+\_\+detection\+::situation\+\_\+class\+::\+Situation\+Class@{implementation\+::actor\+\_\+situation\+\_\+class\+\_\+detection\+::situation\+\_\+class\+::\+Situation\+Class}!contains\+\_\+location@{contains\+\_\+location}}
+\index{contains\+\_\+location@{contains\+\_\+location}!implementation\+::actor\+\_\+situation\+\_\+class\+\_\+detection\+::situation\+\_\+class\+::\+Situation\+Class@{implementation\+::actor\+\_\+situation\+\_\+class\+\_\+detection\+::situation\+\_\+class\+::\+Situation\+Class}}
+\subsubsection{\texorpdfstring{contains\+\_\+location()}{contains\_location()}}
+{\footnotesize\ttfamily def implementation.\+actor\+\_\+situation\+\_\+class\+\_\+detection.\+situation\+\_\+class.\+Situation\+Class.\+contains\+\_\+location (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{actor\+\_\+location }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classimplementation_1_1actor__situation__class__detection_1_1situation__class_1_1_situation_class_a5cb0c30076bcc15f8fede647f246bf9b}\label{classimplementation_1_1actor__situation__class__detection_1_1situation__class_1_1_situation_class_a5cb0c30076bcc15f8fede647f246bf9b}} 
+\index{implementation\+::actor\+\_\+situation\+\_\+class\+\_\+detection\+::situation\+\_\+class\+::\+Situation\+Class@{implementation\+::actor\+\_\+situation\+\_\+class\+\_\+detection\+::situation\+\_\+class\+::\+Situation\+Class}!print\+\_\+information@{print\+\_\+information}}
+\index{print\+\_\+information@{print\+\_\+information}!implementation\+::actor\+\_\+situation\+\_\+class\+\_\+detection\+::situation\+\_\+class\+::\+Situation\+Class@{implementation\+::actor\+\_\+situation\+\_\+class\+\_\+detection\+::situation\+\_\+class\+::\+Situation\+Class}}
+\subsubsection{\texorpdfstring{print\+\_\+information()}{print\_information()}}
+{\footnotesize\ttfamily def implementation.\+actor\+\_\+situation\+\_\+class\+\_\+detection.\+situation\+\_\+class.\+Situation\+Class.\+print\+\_\+information (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{actor }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classimplementation_1_1actor__situation__class__detection_1_1situation__class_1_1_situation_class_a2d1b817a4d39a19f1c0155eb2323b739}\label{classimplementation_1_1actor__situation__class__detection_1_1situation__class_1_1_situation_class_a2d1b817a4d39a19f1c0155eb2323b739}} 
+\index{implementation\+::actor\+\_\+situation\+\_\+class\+\_\+detection\+::situation\+\_\+class\+::\+Situation\+Class@{implementation\+::actor\+\_\+situation\+\_\+class\+\_\+detection\+::situation\+\_\+class\+::\+Situation\+Class}!set\+\_\+possible\+\_\+next\+\_\+situation\+\_\+classes\+\_\+by\+\_\+road\+\_\+segment\+\_\+end@{set\+\_\+possible\+\_\+next\+\_\+situation\+\_\+classes\+\_\+by\+\_\+road\+\_\+segment\+\_\+end}}
+\index{set\+\_\+possible\+\_\+next\+\_\+situation\+\_\+classes\+\_\+by\+\_\+road\+\_\+segment\+\_\+end@{set\+\_\+possible\+\_\+next\+\_\+situation\+\_\+classes\+\_\+by\+\_\+road\+\_\+segment\+\_\+end}!implementation\+::actor\+\_\+situation\+\_\+class\+\_\+detection\+::situation\+\_\+class\+::\+Situation\+Class@{implementation\+::actor\+\_\+situation\+\_\+class\+\_\+detection\+::situation\+\_\+class\+::\+Situation\+Class}}
+\subsubsection{\texorpdfstring{set\+\_\+possible\+\_\+next\+\_\+situation\+\_\+classes\+\_\+by\+\_\+road\+\_\+segment\+\_\+end()}{set\_possible\_next\_situation\_classes\_by\_road\_segment\_end()}}
+{\footnotesize\ttfamily def implementation.\+actor\+\_\+situation\+\_\+class\+\_\+detection.\+situation\+\_\+class.\+Situation\+Class.\+set\+\_\+possible\+\_\+next\+\_\+situation\+\_\+classes\+\_\+by\+\_\+road\+\_\+segment\+\_\+end (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{possible\+\_\+next\+\_\+situation\+\_\+classes\+\_\+by\+\_\+road\+\_\+segment\+\_\+end }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classimplementation_1_1actor__situation__class__detection_1_1situation__class_1_1_situation_class_ac1e44fe3336feab956b59c4d50ed6292}\label{classimplementation_1_1actor__situation__class__detection_1_1situation__class_1_1_situation_class_ac1e44fe3336feab956b59c4d50ed6292}} 
+\index{implementation\+::actor\+\_\+situation\+\_\+class\+\_\+detection\+::situation\+\_\+class\+::\+Situation\+Class@{implementation\+::actor\+\_\+situation\+\_\+class\+\_\+detection\+::situation\+\_\+class\+::\+Situation\+Class}!set\+\_\+previous\+\_\+situation\+\_\+classes\+\_\+by\+\_\+road\+\_\+segment\+\_\+end@{set\+\_\+previous\+\_\+situation\+\_\+classes\+\_\+by\+\_\+road\+\_\+segment\+\_\+end}}
+\index{set\+\_\+previous\+\_\+situation\+\_\+classes\+\_\+by\+\_\+road\+\_\+segment\+\_\+end@{set\+\_\+previous\+\_\+situation\+\_\+classes\+\_\+by\+\_\+road\+\_\+segment\+\_\+end}!implementation\+::actor\+\_\+situation\+\_\+class\+\_\+detection\+::situation\+\_\+class\+::\+Situation\+Class@{implementation\+::actor\+\_\+situation\+\_\+class\+\_\+detection\+::situation\+\_\+class\+::\+Situation\+Class}}
+\subsubsection{\texorpdfstring{set\+\_\+previous\+\_\+situation\+\_\+classes\+\_\+by\+\_\+road\+\_\+segment\+\_\+end()}{set\_previous\_situation\_classes\_by\_road\_segment\_end()}}
+{\footnotesize\ttfamily def implementation.\+actor\+\_\+situation\+\_\+class\+\_\+detection.\+situation\+\_\+class.\+Situation\+Class.\+set\+\_\+previous\+\_\+situation\+\_\+classes\+\_\+by\+\_\+road\+\_\+segment\+\_\+end (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{previous\+\_\+situation\+\_\+classes\+\_\+by\+\_\+road\+\_\+segment\+\_\+end }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classimplementation_1_1actor__situation__class__detection_1_1situation__class_1_1_situation_class_abe7a6160a04aec28f7d4ad4ede854142}\label{classimplementation_1_1actor__situation__class__detection_1_1situation__class_1_1_situation_class_abe7a6160a04aec28f7d4ad4ede854142}} 
+\index{implementation\+::actor\+\_\+situation\+\_\+class\+\_\+detection\+::situation\+\_\+class\+::\+Situation\+Class@{implementation\+::actor\+\_\+situation\+\_\+class\+\_\+detection\+::situation\+\_\+class\+::\+Situation\+Class}!update\+\_\+actor\+\_\+association@{update\+\_\+actor\+\_\+association}}
+\index{update\+\_\+actor\+\_\+association@{update\+\_\+actor\+\_\+association}!implementation\+::actor\+\_\+situation\+\_\+class\+\_\+detection\+::situation\+\_\+class\+::\+Situation\+Class@{implementation\+::actor\+\_\+situation\+\_\+class\+\_\+detection\+::situation\+\_\+class\+::\+Situation\+Class}}
+\subsubsection{\texorpdfstring{update\+\_\+actor\+\_\+association()}{update\_actor\_association()}}
+{\footnotesize\ttfamily def implementation.\+actor\+\_\+situation\+\_\+class\+\_\+detection.\+situation\+\_\+class.\+Situation\+Class.\+update\+\_\+actor\+\_\+association (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{actor }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classimplementation_1_1actor__situation__class__detection_1_1situation__class_1_1_situation_class_a27d4d3259b8bb96107692e2b936ce801}\label{classimplementation_1_1actor__situation__class__detection_1_1situation__class_1_1_situation_class_a27d4d3259b8bb96107692e2b936ce801}} 
+\index{implementation\+::actor\+\_\+situation\+\_\+class\+\_\+detection\+::situation\+\_\+class\+::\+Situation\+Class@{implementation\+::actor\+\_\+situation\+\_\+class\+\_\+detection\+::situation\+\_\+class\+::\+Situation\+Class}!id@{id}}
+\index{id@{id}!implementation\+::actor\+\_\+situation\+\_\+class\+\_\+detection\+::situation\+\_\+class\+::\+Situation\+Class@{implementation\+::actor\+\_\+situation\+\_\+class\+\_\+detection\+::situation\+\_\+class\+::\+Situation\+Class}}
+\subsubsection{\texorpdfstring{id}{id}}
+{\footnotesize\ttfamily implementation.\+actor\+\_\+situation\+\_\+class\+\_\+detection.\+situation\+\_\+class.\+Situation\+Class.\+id}
+
+\mbox{\Hypertarget{classimplementation_1_1actor__situation__class__detection_1_1situation__class_1_1_situation_class_a932a0f38eb6274f6d5f9812175f0365e}\label{classimplementation_1_1actor__situation__class__detection_1_1situation__class_1_1_situation_class_a932a0f38eb6274f6d5f9812175f0365e}} 
+\index{implementation\+::actor\+\_\+situation\+\_\+class\+\_\+detection\+::situation\+\_\+class\+::\+Situation\+Class@{implementation\+::actor\+\_\+situation\+\_\+class\+\_\+detection\+::situation\+\_\+class\+::\+Situation\+Class}!possible\+\_\+next\+\_\+situation\+\_\+classes\+\_\+by\+\_\+road\+\_\+segment\+\_\+end@{possible\+\_\+next\+\_\+situation\+\_\+classes\+\_\+by\+\_\+road\+\_\+segment\+\_\+end}}
+\index{possible\+\_\+next\+\_\+situation\+\_\+classes\+\_\+by\+\_\+road\+\_\+segment\+\_\+end@{possible\+\_\+next\+\_\+situation\+\_\+classes\+\_\+by\+\_\+road\+\_\+segment\+\_\+end}!implementation\+::actor\+\_\+situation\+\_\+class\+\_\+detection\+::situation\+\_\+class\+::\+Situation\+Class@{implementation\+::actor\+\_\+situation\+\_\+class\+\_\+detection\+::situation\+\_\+class\+::\+Situation\+Class}}
+\subsubsection{\texorpdfstring{possible\+\_\+next\+\_\+situation\+\_\+classes\+\_\+by\+\_\+road\+\_\+segment\+\_\+end}{possible\_next\_situation\_classes\_by\_road\_segment\_end}}
+{\footnotesize\ttfamily implementation.\+actor\+\_\+situation\+\_\+class\+\_\+detection.\+situation\+\_\+class.\+Situation\+Class.\+possible\+\_\+next\+\_\+situation\+\_\+classes\+\_\+by\+\_\+road\+\_\+segment\+\_\+end}
+
+\mbox{\Hypertarget{classimplementation_1_1actor__situation__class__detection_1_1situation__class_1_1_situation_class_add0a7a31f57b145a0c5af43ee596cb93}\label{classimplementation_1_1actor__situation__class__detection_1_1situation__class_1_1_situation_class_add0a7a31f57b145a0c5af43ee596cb93}} 
+\index{implementation\+::actor\+\_\+situation\+\_\+class\+\_\+detection\+::situation\+\_\+class\+::\+Situation\+Class@{implementation\+::actor\+\_\+situation\+\_\+class\+\_\+detection\+::situation\+\_\+class\+::\+Situation\+Class}!previous\+\_\+situation\+\_\+classes\+\_\+by\+\_\+road\+\_\+segment\+\_\+end@{previous\+\_\+situation\+\_\+classes\+\_\+by\+\_\+road\+\_\+segment\+\_\+end}}
+\index{previous\+\_\+situation\+\_\+classes\+\_\+by\+\_\+road\+\_\+segment\+\_\+end@{previous\+\_\+situation\+\_\+classes\+\_\+by\+\_\+road\+\_\+segment\+\_\+end}!implementation\+::actor\+\_\+situation\+\_\+class\+\_\+detection\+::situation\+\_\+class\+::\+Situation\+Class@{implementation\+::actor\+\_\+situation\+\_\+class\+\_\+detection\+::situation\+\_\+class\+::\+Situation\+Class}}
+\subsubsection{\texorpdfstring{previous\+\_\+situation\+\_\+classes\+\_\+by\+\_\+road\+\_\+segment\+\_\+end}{previous\_situation\_classes\_by\_road\_segment\_end}}
+{\footnotesize\ttfamily implementation.\+actor\+\_\+situation\+\_\+class\+\_\+detection.\+situation\+\_\+class.\+Situation\+Class.\+previous\+\_\+situation\+\_\+classes\+\_\+by\+\_\+road\+\_\+segment\+\_\+end}
+
+\mbox{\Hypertarget{classimplementation_1_1actor__situation__class__detection_1_1situation__class_1_1_situation_class_a2782b467e701c72c8a445cfe7284f585}\label{classimplementation_1_1actor__situation__class__detection_1_1situation__class_1_1_situation_class_a2782b467e701c72c8a445cfe7284f585}} 
+\index{implementation\+::actor\+\_\+situation\+\_\+class\+\_\+detection\+::situation\+\_\+class\+::\+Situation\+Class@{implementation\+::actor\+\_\+situation\+\_\+class\+\_\+detection\+::situation\+\_\+class\+::\+Situation\+Class}!situation\+\_\+type@{situation\+\_\+type}}
+\index{situation\+\_\+type@{situation\+\_\+type}!implementation\+::actor\+\_\+situation\+\_\+class\+\_\+detection\+::situation\+\_\+class\+::\+Situation\+Class@{implementation\+::actor\+\_\+situation\+\_\+class\+\_\+detection\+::situation\+\_\+class\+::\+Situation\+Class}}
+\subsubsection{\texorpdfstring{situation\+\_\+type}{situation\_type}}
+{\footnotesize\ttfamily implementation.\+actor\+\_\+situation\+\_\+class\+\_\+detection.\+situation\+\_\+class.\+Situation\+Class.\+situation\+\_\+type}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+implementation/actor\+\_\+situation\+\_\+class\+\_\+detection/\hyperlink{situation__class_8py}{situation\+\_\+class.\+py}\end{DoxyCompactItemize}

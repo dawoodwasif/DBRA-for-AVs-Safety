@@ -1,0 +1,89 @@
+\hypertarget{classimplementation_1_1actor__situation__class__detection_1_1situation__class_1_1_two_lane_following_situation_class}{}\section{implementation.\+actor\+\_\+situation\+\_\+class\+\_\+detection.\+situation\+\_\+class.\+Two\+Lane\+Following\+Situation\+Class Class Reference}
+\label{classimplementation_1_1actor__situation__class__detection_1_1situation__class_1_1_two_lane_following_situation_class}\index{implementation.\+actor\+\_\+situation\+\_\+class\+\_\+detection.\+situation\+\_\+class.\+Two\+Lane\+Following\+Situation\+Class@{implementation.\+actor\+\_\+situation\+\_\+class\+\_\+detection.\+situation\+\_\+class.\+Two\+Lane\+Following\+Situation\+Class}}
+Inheritance diagram for implementation.\+actor\+\_\+situation\+\_\+class\+\_\+detection.\+situation\+\_\+class.\+Two\+Lane\+Following\+Situation\+Class\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classimplementation_1_1actor__situation__class__detection_1_1situation__class_1_1_two_lane_following_situation_class}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classimplementation_1_1actor__situation__class__detection_1_1situation__class_1_1_two_lane_following_situation_class_a15aee61039ea4a5a641c28a6d2afa7af}{\+\_\+\+\_\+init\+\_\+\+\_\+}
+\item 
+def \hyperlink{classimplementation_1_1actor__situation__class__detection_1_1situation__class_1_1_two_lane_following_situation_class_a4c3480d6a606fcbafb5de3449a04cb57}{update\+\_\+actor\+\_\+association}
+\item 
+def \hyperlink{classimplementation_1_1actor__situation__class__detection_1_1situation__class_1_1_two_lane_following_situation_class_a12f727ba21c4b086d50738a3663da044}{clear\+\_\+actor\+\_\+associations} (self)
+\item 
+def \hyperlink{classimplementation_1_1actor__situation__class__detection_1_1situation__class_1_1_two_lane_following_situation_class_a52414ba1eea10c65fad030a856a2e210}{print\+\_\+information}
+\item 
+def \hyperlink{classimplementation_1_1actor__situation__class__detection_1_1situation__class_1_1_two_lane_following_situation_class_ad7e7971b4f64c6afa2cc1c3cf65ab376}{get\+\_\+actor\+\_\+lane}
+\item 
+def \hyperlink{classimplementation_1_1actor__situation__class__detection_1_1situation__class_1_1_two_lane_following_situation_class_a687281c48350c369238ebc2990cf30cf}{get\+\_\+lane\+\_\+id\+\_\+by\+\_\+location}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Situation class for a two lane following scenario that inherits from SituationClass. Additional to the super
+class' attributes, a TwoLaneFollowingSituationClass instance also provides information about which vehicle actors
+are located on the left and right lane.
+
+Attributes
+----------
+actors_on_left_lane: List[Union[EgoVehicle, OtherVehicle]]
+    Vehicle actors that are on the left lane
+actors_on_right_lane: List[Union[EgoVehicle, OtherVehicle]]
+    Vehicle actors that are on the right lane
+\end{DoxyVerb}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classimplementation_1_1actor__situation__class__detection_1_1situation__class_1_1_two_lane_following_situation_class_a15aee61039ea4a5a641c28a6d2afa7af}\label{classimplementation_1_1actor__situation__class__detection_1_1situation__class_1_1_two_lane_following_situation_class_a15aee61039ea4a5a641c28a6d2afa7af}} 
+\index{implementation\+::actor\+\_\+situation\+\_\+class\+\_\+detection\+::situation\+\_\+class\+::\+Two\+Lane\+Following\+Situation\+Class@{implementation\+::actor\+\_\+situation\+\_\+class\+\_\+detection\+::situation\+\_\+class\+::\+Two\+Lane\+Following\+Situation\+Class}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!implementation\+::actor\+\_\+situation\+\_\+class\+\_\+detection\+::situation\+\_\+class\+::\+Two\+Lane\+Following\+Situation\+Class@{implementation\+::actor\+\_\+situation\+\_\+class\+\_\+detection\+::situation\+\_\+class\+::\+Two\+Lane\+Following\+Situation\+Class}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def implementation.\+actor\+\_\+situation\+\_\+class\+\_\+detection.\+situation\+\_\+class.\+Two\+Lane\+Following\+Situation\+Class.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{id }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classimplementation_1_1actor__situation__class__detection_1_1situation__class_1_1_two_lane_following_situation_class_a12f727ba21c4b086d50738a3663da044}\label{classimplementation_1_1actor__situation__class__detection_1_1situation__class_1_1_two_lane_following_situation_class_a12f727ba21c4b086d50738a3663da044}} 
+\index{implementation\+::actor\+\_\+situation\+\_\+class\+\_\+detection\+::situation\+\_\+class\+::\+Two\+Lane\+Following\+Situation\+Class@{implementation\+::actor\+\_\+situation\+\_\+class\+\_\+detection\+::situation\+\_\+class\+::\+Two\+Lane\+Following\+Situation\+Class}!clear\+\_\+actor\+\_\+associations@{clear\+\_\+actor\+\_\+associations}}
+\index{clear\+\_\+actor\+\_\+associations@{clear\+\_\+actor\+\_\+associations}!implementation\+::actor\+\_\+situation\+\_\+class\+\_\+detection\+::situation\+\_\+class\+::\+Two\+Lane\+Following\+Situation\+Class@{implementation\+::actor\+\_\+situation\+\_\+class\+\_\+detection\+::situation\+\_\+class\+::\+Two\+Lane\+Following\+Situation\+Class}}
+\subsubsection{\texorpdfstring{clear\+\_\+actor\+\_\+associations()}{clear\_actor\_associations()}}
+{\footnotesize\ttfamily def implementation.\+actor\+\_\+situation\+\_\+class\+\_\+detection.\+situation\+\_\+class.\+Two\+Lane\+Following\+Situation\+Class.\+clear\+\_\+actor\+\_\+associations (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Implements method from base class SituationClass: All wrapped actor associations are removed from this
+situation class. This affects the common list of all actors within the situation class as well as the
+lists that contain the actors on the left and the right lane.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classimplementation_1_1actor__situation__class__detection_1_1situation__class_1_1_two_lane_following_situation_class_ad7e7971b4f64c6afa2cc1c3cf65ab376}\label{classimplementation_1_1actor__situation__class__detection_1_1situation__class_1_1_two_lane_following_situation_class_ad7e7971b4f64c6afa2cc1c3cf65ab376}} 
+\index{implementation\+::actor\+\_\+situation\+\_\+class\+\_\+detection\+::situation\+\_\+class\+::\+Two\+Lane\+Following\+Situation\+Class@{implementation\+::actor\+\_\+situation\+\_\+class\+\_\+detection\+::situation\+\_\+class\+::\+Two\+Lane\+Following\+Situation\+Class}!get\+\_\+actor\+\_\+lane@{get\+\_\+actor\+\_\+lane}}
+\index{get\+\_\+actor\+\_\+lane@{get\+\_\+actor\+\_\+lane}!implementation\+::actor\+\_\+situation\+\_\+class\+\_\+detection\+::situation\+\_\+class\+::\+Two\+Lane\+Following\+Situation\+Class@{implementation\+::actor\+\_\+situation\+\_\+class\+\_\+detection\+::situation\+\_\+class\+::\+Two\+Lane\+Following\+Situation\+Class}}
+\subsubsection{\texorpdfstring{get\+\_\+actor\+\_\+lane()}{get\_actor\_lane()}}
+{\footnotesize\ttfamily def implementation.\+actor\+\_\+situation\+\_\+class\+\_\+detection.\+situation\+\_\+class.\+Two\+Lane\+Following\+Situation\+Class.\+get\+\_\+actor\+\_\+lane (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{actor }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classimplementation_1_1actor__situation__class__detection_1_1situation__class_1_1_two_lane_following_situation_class_a687281c48350c369238ebc2990cf30cf}\label{classimplementation_1_1actor__situation__class__detection_1_1situation__class_1_1_two_lane_following_situation_class_a687281c48350c369238ebc2990cf30cf}} 
+\index{implementation\+::actor\+\_\+situation\+\_\+class\+\_\+detection\+::situation\+\_\+class\+::\+Two\+Lane\+Following\+Situation\+Class@{implementation\+::actor\+\_\+situation\+\_\+class\+\_\+detection\+::situation\+\_\+class\+::\+Two\+Lane\+Following\+Situation\+Class}!get\+\_\+lane\+\_\+id\+\_\+by\+\_\+location@{get\+\_\+lane\+\_\+id\+\_\+by\+\_\+location}}
+\index{get\+\_\+lane\+\_\+id\+\_\+by\+\_\+location@{get\+\_\+lane\+\_\+id\+\_\+by\+\_\+location}!implementation\+::actor\+\_\+situation\+\_\+class\+\_\+detection\+::situation\+\_\+class\+::\+Two\+Lane\+Following\+Situation\+Class@{implementation\+::actor\+\_\+situation\+\_\+class\+\_\+detection\+::situation\+\_\+class\+::\+Two\+Lane\+Following\+Situation\+Class}}
+\subsubsection{\texorpdfstring{get\+\_\+lane\+\_\+id\+\_\+by\+\_\+location()}{get\_lane\_id\_by\_location()}}
+{\footnotesize\ttfamily def implementation.\+actor\+\_\+situation\+\_\+class\+\_\+detection.\+situation\+\_\+class.\+Two\+Lane\+Following\+Situation\+Class.\+get\+\_\+lane\+\_\+id\+\_\+by\+\_\+location (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{location }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classimplementation_1_1actor__situation__class__detection_1_1situation__class_1_1_two_lane_following_situation_class_a52414ba1eea10c65fad030a856a2e210}\label{classimplementation_1_1actor__situation__class__detection_1_1situation__class_1_1_two_lane_following_situation_class_a52414ba1eea10c65fad030a856a2e210}} 
+\index{implementation\+::actor\+\_\+situation\+\_\+class\+\_\+detection\+::situation\+\_\+class\+::\+Two\+Lane\+Following\+Situation\+Class@{implementation\+::actor\+\_\+situation\+\_\+class\+\_\+detection\+::situation\+\_\+class\+::\+Two\+Lane\+Following\+Situation\+Class}!print\+\_\+information@{print\+\_\+information}}
+\index{print\+\_\+information@{print\+\_\+information}!implementation\+::actor\+\_\+situation\+\_\+class\+\_\+detection\+::situation\+\_\+class\+::\+Two\+Lane\+Following\+Situation\+Class@{implementation\+::actor\+\_\+situation\+\_\+class\+\_\+detection\+::situation\+\_\+class\+::\+Two\+Lane\+Following\+Situation\+Class}}
+\subsubsection{\texorpdfstring{print\+\_\+information()}{print\_information()}}
+{\footnotesize\ttfamily def implementation.\+actor\+\_\+situation\+\_\+class\+\_\+detection.\+situation\+\_\+class.\+Two\+Lane\+Following\+Situation\+Class.\+print\+\_\+information (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{actor }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classimplementation_1_1actor__situation__class__detection_1_1situation__class_1_1_two_lane_following_situation_class_a4c3480d6a606fcbafb5de3449a04cb57}\label{classimplementation_1_1actor__situation__class__detection_1_1situation__class_1_1_two_lane_following_situation_class_a4c3480d6a606fcbafb5de3449a04cb57}} 
+\index{implementation\+::actor\+\_\+situation\+\_\+class\+\_\+detection\+::situation\+\_\+class\+::\+Two\+Lane\+Following\+Situation\+Class@{implementation\+::actor\+\_\+situation\+\_\+class\+\_\+detection\+::situation\+\_\+class\+::\+Two\+Lane\+Following\+Situation\+Class}!update\+\_\+actor\+\_\+association@{update\+\_\+actor\+\_\+association}}
+\index{update\+\_\+actor\+\_\+association@{update\+\_\+actor\+\_\+association}!implementation\+::actor\+\_\+situation\+\_\+class\+\_\+detection\+::situation\+\_\+class\+::\+Two\+Lane\+Following\+Situation\+Class@{implementation\+::actor\+\_\+situation\+\_\+class\+\_\+detection\+::situation\+\_\+class\+::\+Two\+Lane\+Following\+Situation\+Class}}
+\subsubsection{\texorpdfstring{update\+\_\+actor\+\_\+association()}{update\_actor\_association()}}
+{\footnotesize\ttfamily def implementation.\+actor\+\_\+situation\+\_\+class\+\_\+detection.\+situation\+\_\+class.\+Two\+Lane\+Following\+Situation\+Class.\+update\+\_\+actor\+\_\+association (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{actor }\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+implementation/actor\+\_\+situation\+\_\+class\+\_\+detection/\hyperlink{situation__class_8py}{situation\+\_\+class.\+py}\end{DoxyCompactItemize}
