@@ -99,9 +99,7 @@ The overall goal is to allow autonomous vehicles (AVs) to perform real-time risk
 The system supports various OpenSCENARIO (.xosc) files that can simulate different autonomous driving situations. Ensure your scenario files are placed in the appropriate directory for them to be accessible.
 
 # Risk Plots
-
-![Sample risk plot for vehicle in front and on left](relative%20assets/sample.png?raw=true "Sample Risk Plot")
-
+![Sample risk plot for vehicle in front and on left](assets/sample.png)
 
 # Risk Assessment Output
 
