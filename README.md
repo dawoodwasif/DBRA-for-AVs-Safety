@@ -7,7 +7,6 @@ This project implements a dynamic Bayesian Network-based risk assessment system 
 The system calculates probabilistic risk levels for scenarios such as:
 - Forward Vehicle Braking
 - Left and Right Vehicle Cut-In
-- Sensor Uncertainty due to environmental conditions
 
 The overall goal is to allow autonomous vehicles (AVs) to perform real-time risk assessments, adjusting their driving behavior dynamically to ensure optimal safety and reliability.
 
@@ -22,7 +21,7 @@ The overall goal is to allow autonomous vehicles (AVs) to perform real-time risk
 3. **Libraries**
    Install the following required libraries using pip:
    ```bash
-   pip install matplotlib numpy carla==0.9.10
+   pip install -r requirements.txt
 
 
 # Setup
