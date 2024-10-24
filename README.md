@@ -40,8 +40,8 @@ The overall goal is to allow autonomous vehicles (AVs) to perform real-time risk
 1. Clone the repository into your working directory:
 
    ```bash
-   git clone [your-repo-url]
-   cd [your-repo-directory]
+   git clone [https://github.com/dawoodwasif/DBRA-for-AVs-Safety]
+   cd [DBRA-for-AVs-Safety]
    ```
 
 ## Install Required Libraries
